@@ -108,7 +108,7 @@ If you really really need to change something to the test file, please motivate 
 
 ### Running environment
 
-To test your code in an ARM environment, we provide you with a micropython installed in a cloud ARM server. 
+To let you test your code in an ARM environment, we provide you with a micropython installed in a cloud ARM server. 
 You can access it via ssh: 
 - IP: `163.172.186.107`
 - user: `builder`
