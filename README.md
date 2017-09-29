@@ -93,6 +93,7 @@ The specific goal of the requested implementation is to produce the exact same o
 ```
 $ micropython test_threading.py 
 ```
-Minor changes to the import section will be OK, if any.
+Minor changes (like `import time as time -> import utime as time`) will be OK.
+
 
 
