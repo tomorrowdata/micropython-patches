@@ -89,11 +89,29 @@ $ python3 test_threading.py
 <Thread(t2, started 140104731449088)> 2017-09-29T14:01:24 received stop message, exiting.
 <_MainThread(MainThread, started 140104763766528)> 2017-09-29T14:01:24 finished.
 ```
-The specific goal of the requested implementation is to produce the exact same output with micropython:
+The specific goal of the requested implementation is to produce the exact same output with micropython on an ARM machine:
 ```
 $ micropython test_threading.py 
 ```
-Minor changes (like `import time as time -> import utime as time`) will be OK.
+Minor changes to the test file (like `import time as time -> import utime as time`) will be OK.
 
 
+## Development environment
 
+### Code management
+
+- Fork this repo on your github account
+- commit and push your work to your repo
+- finally make a pull request to this repo to submit your work.
+
+### Running environment
+
+To test your code in an ARM environment, we provide you with a micropython installed in a cloud ARM server. 
+You can access it via ssh: 
+- IP: `163.172.186.107`
+- user: `builder`
+- key: provide us with your public ssh key and we will set it into the server, so to allow access to you.
+
+Once on the server you can simply run:
+- `python3`
+- `micropython`
