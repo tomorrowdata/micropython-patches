@@ -10,7 +10,7 @@ This of course means that we need Python running on the embedded devices. For ex
 
 ## iottlyAgent on full python embedded
 
-The iottlyAgent also run on very constrained ARM embedded systems thanks to a full Python (3.6) embedded distribution we (TomorrowData) built from scratch to achieve a reaaally small footprint:
+The iottlyAgent also runs on very constrained ARM embedded systems thanks to a full Python (3.6) embedded distribution we (TomorrowData) built from scratch to achieve a reaaally small footprint:
 - 30Mb of storage space
 - 6Mb or RAM when running
 
