@@ -16,11 +16,11 @@ The iottlyAgent also run on very constrained ARM embedded systems thanks to a fu
 
 Our customers install this Python embedded distribution on proprietary ARM boards with less then 128Mb of flash and RAM.
 
-## A new challenge: superstripped iottlyAgent
+# A new challenge: superstripped iottlyAgent
 
 We are now facing a new challenge: ship the iottlyAgent on boards with 8Mb flash and 4Mb RAM, with a footprint requirement in the order of ~500Kb.
 
-# Micropython
+## Micropython
 
 To achieve this main goal we are starting from the [micropython](https://github.com/micropython/micropython) distribution.
 Micropython is a python port of a subset of the python standard library suited to run on highly contrained devices:
