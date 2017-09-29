@@ -66,7 +66,7 @@ More precisely: write (or port) a pure python implementation of:
 - `queue`: https://docs.python.org/3.5/library/queue.html
 which have to work on micropython.
 
-To validate the implementation we'll use the above `[]()`
+To validate the implementation we'll use the above `[test_threading.py](https://github.com/tomorrowdata/micropython-patches/blob/master/test_threading.py)` file.
 
 
 
