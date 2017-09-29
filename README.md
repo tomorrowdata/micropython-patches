@@ -29,6 +29,8 @@ Micropython is a python port of a **subset of the python standard library** suit
 
 Our current work is about the former cathegory.
 
+We use a single executable standalone build of micropython (`230 Kb`).
+
 ## porting iottlyAgent on micropython
 
 Given that only a subset of the python standard library is available on micropython we need to make a porting of the iottlyAgent code to make it running on micropython.
@@ -61,12 +63,32 @@ Long story short, to make the porting of the iottlyAgent as smooth as possible, 
 
 Which is actually your task ... :)
 
-More precisely: write (or port) a pure python implementation of:
-- `threading`: https://docs.python.org/3.5/library/threading.html
+More precisely: write (or port) a pure (micro)python implementation of:
+- `threading`: https://docs.python.org/3.5/library /threading.html
 - `queue`: https://docs.python.org/3.5/library/queue.html
-which have to work on micropython.
+
+The code should be well documented (comments) production grade code.
+
+## Validation
 
 To validate the implementation we'll use the above [`test_threading.py`](https://github.com/tomorrowdata/micropython-patches/blob/master/test_threading.py) file.
+
+The script is tested in python 3.5 where it produces the following output:
+```
+$ python3 test_threading.py 
+<_MainThread(MainThread, started 140104763766528)> 2017-09-29T14:01:20 Started.
+<Thread(t1, started 140104739841792)> 2017-09-29T14:01:20 enqueue 0
+<Thread(t2, started 140104731449088)> 2017-09-29T14:01:20 dequeue 0
+<Thread(t1, started 140104739841792)> 2017-09-29T14:01:21 enqueue 1
+<Thread(t2, started 140104731449088)> 2017-09-29T14:01:21 dequeue 1
+<Thread(t1, started 140104739841792)> 2017-09-29T14:01:22 enqueue 2
+<Thread(t2, started 140104731449088)> 2017-09-29T14:01:22 dequeue 2
+<Thread(t1, started 140104739841792)> 2017-09-29T14:01:23 enqueue 3
+<Thread(t2, started 140104731449088)> 2017-09-29T14:01:23 dequeue 3
+<Thread(t1, started 140104739841792)> 2017-09-29T14:01:24 finished iterations, exiting.
+<Thread(t2, started 140104731449088)> 2017-09-29T14:01:24 received stop message, exiting.
+<_MainThread(MainThread, started 140104763766528)> 2017-09-29T14:01:24 finished.
+```
 
 
 
