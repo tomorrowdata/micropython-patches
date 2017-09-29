@@ -67,6 +67,8 @@ More precisely: write (or port) a pure (micro)python implementation of:
 - `threading`: https://docs.python.org/3.5/library/threading.html
 - `queue`: https://docs.python.org/3.5/library/queue.html
 
+The implementation is to be based on top of the two aforementioned low level micropython apis (at least for what concerns `_thread`, while `heapqueue` is up to you).
+
 The code should be well documented (comments) and production grade.
 
 ## Validation
