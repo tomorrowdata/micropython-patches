@@ -63,7 +63,7 @@ Long story short, to make the porting of the iottlyAgent as smooth as possible, 
 
 Which is actually your task ... :)
 
-More precisely, provide a pure (micro)python implementation of:
+More precisely, we ask you provide a pure (micro)python implementation of:
 - `threading`: https://docs.python.org/3.5/library/threading.html
 - `queue`: https://docs.python.org/3.5/library/queue.html
 
