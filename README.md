@@ -4,7 +4,7 @@
 
 The iottlyAgent is a small piece of software (by TomorrowData) which runs on embedded devices allowing technicians to remotely jump into them, to remotely work with such devices as if they were in front of them.
 
-The iottlyAgent is written in Python 3.
+The iottlyAgent is written in Python 3, beacuse with python we can give great flexibility to the technicians which can easily write their own custom functions for the management and monitoring of the embedded devices.
 
 For example it runs on the Raspberry Pi, on top of the default Python packages shipped by Raspbian (Raspberry Debian).
 
