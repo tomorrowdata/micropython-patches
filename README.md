@@ -61,7 +61,12 @@ Long story short, to make the porting of the iottlyAgent as smooth as possible, 
 
 Which is actually your task ... :)
 
-pure python
+More precisely: write (or port) a pure python implementation of:
+- `threading`: https://docs.python.org/3.5/library/threading.html
+- `queue`: https://docs.python.org/3.5/library/queue.html
+which have to work on micropython.
+
+To validate the implementation we'll use the above `[]()`
 
 
 
