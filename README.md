@@ -55,10 +55,13 @@ It turns out that micropython implements two low level apis which are fundamenta
 
 Unfortunaltely it does not implement the full high level APIs of `threading` and `queue`.
 
-Long story short, to make the porting of the iottlyAgent as smooth as possible, we need ...
+Long story short, to make the porting of the iottlyAgent as smooth as possible, we need to ...
 
 # Implement `threading` and `queue` APIs in micropython
 
+Which is actually your task ... :)
+
+pure python
 
 
 
