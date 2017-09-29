@@ -8,7 +8,7 @@ The iottlyAgent is written in Python 3, beacuse with python we can give great fl
 
 This of course means that we need Python running on the embedded devices. For example, when on a Raspberry Pi, the iotlyAgent runs on top of the default Python packages shipped by Raspbian (Raspberry Debian).
 
-## iottlyAgent on full embedded python
+## iottlyAgent on full python embedded
 
 The iottlyAgent also run on very constrained ARM embedded systems thanks to a full Python (3.6) embedded distribution we (TomorrowData) built from scratch to achieve a reaaally small footprint:
 - 30Mb of storage space
