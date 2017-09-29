@@ -24,20 +24,20 @@ We are now facing a new challenge: ship the iottlyAgent on boards with 8Mb flash
 
 To achieve this main goal we are starting from the [micropython](https://github.com/micropython/micropython) distribution.
 Micropython is a port of a **subset of the python standard library** suited to run on highly constrained devices:
-1. single board PCs (like raspberry pis) with small resource (eg 8Mb flash and 4Mb RAM) and the Linux operating system
-2. microcontroller boards (like esp8266) with 64 KiB of instruction RAM, 96 KiB of data RAM and **NO** operating system.
+1. single board PCs (like raspberry pis) with small resources (eg 8Mb flash and 4Mb RAM) and the Linux operating system
+2. microcontroller boards (like esp8266, with 64 KiB of instruction RAM, 96 KiB of data RAM) and **NO** operating system.
 
 Our current work is about the former cathegory.
 
 We use a single executable standalone build of micropython (`230 Kb`).
 
-## porting iottlyAgent on micropython
+## Porting the iottlyAgent on micropython
 
 Given that only a subset of the python standard library is available on micropython we need to make a porting of the iottlyAgent code to make it running on micropython.
 
 ## Multithreading
 
-iottlyAgent heavily relies on multithreading to perform in parallel a lot of tasks:
+iottlyAgent heavily relies on multithreading to perform a lot of tasks in parallel:
 - MQTT communication with iottlyCloud
 - async execution of scheduled tasks
 - async execution of long running tasks triggered by external commands
@@ -63,7 +63,7 @@ Long story short, to make the porting of the iottlyAgent as smooth as possible, 
 
 Which is actually your task ... :)
 
-More precisely: write (or port) a pure (micro)python implementation of:
+More precisely, provide a pure (micro)python implementation of:
 - `threading`: https://docs.python.org/3.5/library/threading.html
 - `queue`: https://docs.python.org/3.5/library/queue.html
 
