@@ -89,6 +89,10 @@ $ python3 test_threading.py
 <Thread(t2, started 140104731449088)> 2017-09-29T14:01:24 received stop message, exiting.
 <_MainThread(MainThread, started 140104763766528)> 2017-09-29T14:01:24 finished.
 ```
-
+The specific goal of the requested implementation is to produce the exact same output with micropython:
+```
+$ micropython test_threading.py 
+```
+Minor changes to the import section will be OK, if any.
 
 
