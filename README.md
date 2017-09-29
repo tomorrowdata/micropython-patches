@@ -24,8 +24,8 @@ We are now facing a new challenge: ship the iottlyAgent on boards with 8Mb flash
 
 To achieve this main goal we are starting from the [micropython](https://github.com/micropython/micropython) distribution.
 Micropython is a python port of a subset of the python standard library suited to run on highly constrained devices:
-1. single board PCs (like raspberry pis) with small resource (eg 8Mb flash and 4Mb RAM) and an operating system
-2. microcontroller boards (like esp8266) with 64 KiB of instruction RAM, 96 KiB of data RAM and *NO* operating system.
+1. single board PCs (like raspberry pis) with small resource (eg 8Mb flash and 4Mb RAM) and the Linux operating system
+2. microcontroller boards (like esp8266) with 64 KiB of instruction RAM, 96 KiB of data RAM and **NO** operating system.
 
 Our current work is about the former cathegory.
 
