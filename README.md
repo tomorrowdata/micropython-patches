@@ -2,7 +2,7 @@
 
 ## iottlyAgent
 
-The iottlyAgent is a small piece of software (by TomorrowData) which runs on embedded devices allowing technicians to remotely jump into them, to work as if the devices were in front of them.
+The iottlyAgent is a small piece of software (by TomorrowData) which runs on embedded devices allowing technicians to remotely jump into them, to remotely work with such devices as if they were in front of them.
 
 The iottlyAgent is written in Python 3.
 
