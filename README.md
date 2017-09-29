@@ -64,10 +64,10 @@ Long story short, to make the porting of the iottlyAgent as smooth as possible, 
 Which is actually your task ... :)
 
 More precisely: write (or port) a pure (micro)python implementation of:
-- `threading`: https://docs.python.org/3.5/library /threading.html
+- `threading`: https://docs.python.org/3.5/library/threading.html
 - `queue`: https://docs.python.org/3.5/library/queue.html
 
-The code should be well documented (comments) production grade code.
+The code should be well documented (comments) and production grade.
 
 ## Validation
 
@@ -95,6 +95,8 @@ $ micropython test_threading.py
 ```
 Minor changes to the test file (like `import time as time -> import utime as time`) will be OK.
 
+If you really really need to change something to the test file, please motivate it.
+
 
 ## Development environment
 
@@ -115,3 +117,9 @@ You can access it via ssh:
 Once on the server you can simply run:
 - `python3`
 - `micropython`
+
+## That's all
+
+Do not esitate to contact us for any doubt, or to discuss your approach.
+
+Enjoy this challenge!
